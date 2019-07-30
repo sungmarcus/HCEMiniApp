@@ -1,0 +1,14 @@
+{
+    "mobile": {
+        "awscloudformation": {
+            "AuthRoleName": "heatmapminiapp-mobile-20190722180734-authRole",
+            "UnauthRoleArn": "arn:aws:iam::951446604970:role/heatmapminiapp-mobile-20190722180734-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::951446604970:role/heatmapminiapp-mobile-20190722180734-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "heatmapminiapp-mobile-20190722180734-deployment",
+            "UnauthRoleName": "heatmapminiapp-mobile-20190722180734-unauthRole",
+            "StackName": "heatmapminiapp-mobile-20190722180734",
+            "StackId": "arn:aws:cloudformation:eu-west-1:951446604970:stack/heatmapminiapp-mobile-20190722180734/333949f0-aca3-11e9-b03b-0664065f2f2e"
+        }
+    }
+}

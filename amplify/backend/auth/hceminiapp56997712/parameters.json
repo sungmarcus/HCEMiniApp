@@ -1,0 +1,71 @@
+{
+    "identityPoolName": "hceminiapp56997712_identitypool_56997712",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "hcemin_56997712_lambda_log_policy",
+    "openIdLambdaRoleName": "hcemin_56997712_openid_lambda_role",
+    "openIdRolePolicy": "hcemin_56997712_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "hcemin_56997712_openid_lambda_iam_policy",
+    "openIdLogPolicy": "hcemin_56997712_openid_lambda_log_policy",
+    "userPoolName": "hceminiapp56997712_userpool_56997712",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "hcemin56997712_sns-role",
+    "roleExternalId": "hcemin56997712_role_external_id",
+    "policyName": "hcemin56997712-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "hcemin56997712_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "hcemin56997712_totp_lambda_role",
+    "mfaLambdaLogPolicy": "hcemin56997712_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "hcemin56997712_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "hcemin56997712_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "hcemin56997712_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "hcemin56997712_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "hcemin56997712_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "hceminiapp56997712",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default",
+    "usernameAttributes": [
+        "email"
+    ]
+}

@@ -7,7 +7,8 @@ import {
   Text,
   View,
   TextInput,
-  Dimensions
+  Dimensions,
+  TouchableOpacity
 } from "react-native";
 import HCE from "react-native-nfc-hce";
 
@@ -17,7 +18,8 @@ export default class App extends Component {
   state = {
     support: false,
     enabled: false,
-    warnText: null
+    warnText: null,
+    number: 0 
   };
 
   componentDidMount = () => {
@@ -46,8 +48,13 @@ export default class App extends Component {
     }
   };
 
+  _onPress= () => {
+    this.setState({number: 1375463})
+  }
+
   render() {
-    const { warnText } = this.state;
+    const { warnText, number } = this.state;
+
     return (
       <View style={styles.container}>
         {warnText ? (
@@ -55,11 +62,15 @@ export default class App extends Component {
         ) : (
           <TextInput
             style={styles.input}
-            placeholder={"Enter Card Content"}
+            placeholder={"Enter Email "}
             onChangeText={this._onChangeText}
             returnKeyType={"done"}
           />
         )}
+        <TouchableOpacity onPress={this._onPress} style={styles.buttonContainer}>
+					<Text style={styles.buttonText}>Smart ID</Text>
+				</TouchableOpacity>
+        <Text style={styles.text}>{number}</Text>
       </View>
     );
   }
@@ -75,5 +86,17 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderColor: "black",
     borderWidth: 1
-  }
+  },
+  buttonContainer: {
+		backgroundColor: "#34495e",
+		marginTop: 10,
+		marginBottom: 10,
+		padding: 10,
+		borderRadius: 5,
+		alignItems: "center"
+	},
+	buttonText: {
+		color: "#fff",
+		fontSize: 24
+  },
 });

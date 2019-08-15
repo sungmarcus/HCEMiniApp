@@ -1,11 +1,9 @@
 {
-	"api": {
-		"heatmapminiapp": {
-			"service": "AppSync",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"securityType": "API_KEY"
-			}
+	"api": {},
+	"auth": {
+		"hceminiapp56997712": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
 		}
 	}
 }

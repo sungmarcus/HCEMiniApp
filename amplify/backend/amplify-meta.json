@@ -11,22 +11,26 @@
 			"StackId": "arn:aws:cloudformation:eu-west-1:951446604970:stack/heatmapminiapp-mobile-20190722180734/333949f0-aca3-11e9-b03b-0664065f2f2e"
 		}
 	},
-	"api": {
-		"heatmapminiapp": {
-			"service": "AppSync",
+	"api": {},
+	"auth": {
+		"hceminiapp56997712": {
+			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
-			"output": {
-				"securityType": "API_KEY",
-				"GraphQLAPIIdOutput": "gtatyp5kjbf35ghh7st3v6hmze",
-				"GraphQLAPIEndpointOutput": "https://3s2yvh5hhnbxhmpgknvcmgrc7i.appsync-api.eu-west-1.amazonaws.com/graphql",
-				"GraphQLAPIKeyOutput": "da2-jt4jn2ton5dc5g2jsm7duprma4"
-			},
 			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/heatmapminiapp-mobile-20190722180734-deployment/amplify-cfn-templates/api/cloudformation-template.json",
-				"logicalId": "apiheatmapminiapp"
+				"s3TemplateURL": "https://s3.amazonaws.com/heatmapminiapp-mobile-20190722180734-deployment/amplify-cfn-templates/auth/hceminiapp56997712-cloudformation-template.yml",
+				"logicalId": "authhceminiapp56997712"
 			},
-			"lastPushTimeStamp": "2019-07-22T17:18:09.488Z",
-			"lastPushDirHash": "yCEZDaVxUZ75Z6nWEg6qM349Jtk="
+			"lastPushTimeStamp": "2019-07-30T21:22:23.751Z",
+			"output": {
+				"AppClientSecret": "nbt3njhoaa8hoc4lv2uveg3gmuk4st01jbnr0acau5bif2borl9",
+				"UserPoolId": "eu-west-1_N4C29DjBM",
+				"AppClientIDWeb": "2kdgq7uodd9sl8p8ke76rgibgm",
+				"AppClientID": "3bhjkk4elfhic1dujuq53jr3p2",
+				"IdentityPoolId": "eu-west-1:bd4b077d-8a26-4988-b009-57b3d9d7a102",
+				"IdentityPoolName": "hceminiapp56997712_identitypool_56997712__mobile",
+				"UserPoolName": "hceminiapp56997712_userpool_56997712"
+			},
+			"lastPushDirHash": "UcT0XVGXpgvgjl/FTVwiGf9Cy04="
 		}
 	}
 }

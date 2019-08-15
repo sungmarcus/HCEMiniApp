@@ -9,6 +9,11 @@
             "UnauthRoleName": "heatmapminiapp-mobile-20190722180734-unauthRole",
             "StackName": "heatmapminiapp-mobile-20190722180734",
             "StackId": "arn:aws:cloudformation:eu-west-1:951446604970:stack/heatmapminiapp-mobile-20190722180734/333949f0-aca3-11e9-b03b-0664065f2f2e"
+        },
+        "categories": {
+            "auth": {
+                "hceminiapp56997712": {}
+            }
         }
     }
 }

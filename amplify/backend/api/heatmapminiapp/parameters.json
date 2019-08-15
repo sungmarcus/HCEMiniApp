@@ -1,4 +1,0 @@
-{
-    "AppSyncApiName": "heatmapminiapp",
-    "DynamoDBBillingMode": "PAY_PER_REQUEST"
-}
